@@ -10,4 +10,4 @@ Masked Image Modeling (MIM) is a general self-supervised pre-training task where
 
 MIM has become a cornerstone of modern vision models, enabling efficient pre-training on large-scale unlabeled datasets.
 
-![MIM Framework](./images/simmim.png)
+![MIM Framework](./images/mim.png)
