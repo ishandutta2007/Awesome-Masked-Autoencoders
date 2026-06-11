@@ -5,20 +5,27 @@ When moving beyond Masked Autoencoders (MAEs) and Masked Image Modeling (MIM) fo
 
 ## Detailed Alternatives and Architectures
 
-Below are detailed explanations and architecture diagrams for Masked Autoencoders and their various alternatives:
+Below is a comprehensive table detailing Masked Autoencoders and their various self-supervised and generative alternatives:
 
-1.  **[Masked Autoencoders (MAE)](./MAE.md)** - Scalable vision learners using asymmetric encoder-decoders.
-2.  **[Masked Image Modeling (MIM)](./MIM.md)** - The general paradigm of reconstructing missing image patches.
-3.  **[SimCLR](./SimCLR.md)** - A simple framework for contrastive learning of visual representations.
-4.  **[I-JEPA](./I-JEPA.md)** - Joint-Embedding Predictive Architecture predicting in latent space.
-5.  **[BEiT](./BEiT.md)** - BERT-style pre-training using discrete visual tokens.
-6.  **[DINO](./DINO.md)** - Self-distillation with no labels, learning object-centric features.
-7.  **[SimMIM](./SimMIM.md)** - A simplified framework for masked image modeling with pixel reconstruction.
-8.  **[Data2Vec](./Data2Vec.md)** - A unified framework for self-supervised learning across vision, speech, and text.
-9.  **[MaskFeat](./MaskFeat.md)** - Masked feature prediction using HOG as the target.
-10. **[CAE](./CAE.md)** - Context Autoencoder using a latent regressor for masked patch prediction.
-11. **[Variational Autoencoder (VAE)](./VAE.md)** - Generative models using probabilistic latent spaces and reparameterization.
-12. **[Sparse Autoencoder (SAE)](./SparseAutoencoder.md)** - Autoencoders with sparsity constraints to learn efficient and salient features.
+| Model / Paradigm | Year | Original Paper | Description |
+| :--- | :---: | :--- | :--- |
+| **[Masked Autoencoders (MAE)](./MAE.md)** | 2021 | [He et al.](https://arxiv.org/abs/2111.06377) | Scalable vision learners using asymmetric encoder-decoders. |
+| **[Masked Image Modeling (MIM)](./MIM.md)** | 2016 | [Pathak et al.](https://arxiv.org/abs/1604.07379) | The general paradigm of reconstructing missing image patches (e.g., Context Encoders). |
+| **[SimCLR](./SimCLR.md)** | 2020 | [Chen et al.](https://arxiv.org/abs/2002.05709) | A simple framework for contrastive learning of visual representations. |
+| **[MoCo](./MoCo.md)** | 2019 | [He et al.](https://arxiv.org/abs/1911.05722) | Momentum Contrast: builds dynamic dictionaries with a queue and momentum encoder. |
+| **[I-JEPA](./I-JEPA.md)** | 2023 | [Assran et al.](https://arxiv.org/abs/2301.08243) | Joint-Embedding Predictive Architecture predicting in a latent abstract space. |
+| **[VICReg](./VICReg.md)** | 2021 | [Bardes et al.](https://arxiv.org/abs/2105.04906) | Non-contrastive regularization preventing collapse via variance, invariance, and covariance. |
+| **[BEiT](./BEiT.md)** | 2021 | [Bao et al.](https://arxiv.org/abs/2106.08254) | BERT-style pre-training using discrete visual tokens. |
+| **[DINO](./DINO.md)** | 2021 | [Caron et al.](https://arxiv.org/abs/2104.14294) | Self-distillation with no labels, learning object-centric features. |
+| **[SwAV](./SwAV.md)** | 2020 | [Caron et al.](https://arxiv.org/abs/2006.09882) | Swapping Assignments between Views, contrasting online cluster assignments. |
+| **[SimMIM](./SimMIM.md)** | 2021 | [Xie et al.](https://arxiv.org/abs/2111.09886) | A simplified framework for masked image modeling with direct pixel reconstruction. |
+| **[Data2Vec](./Data2Vec.md)** | 2022 | [Baevski et al.](https://arxiv.org/abs/2202.03555) | A unified teacher-student framework across vision, speech, and text. |
+| **[MaskFeat](./MaskFeat.md)** | 2021 | [Wei et al.](https://arxiv.org/abs/2112.09133) | Masked feature prediction using Histograms of Oriented Gradients (HOG) as targets. |
+| **[CAE](./CAE.md)** | 2022 | [Chen et al.](https://arxiv.org/abs/2202.03026) | Context Autoencoder using a latent regressor for masked patch prediction. |
+| **[RotNet](./RotNet.md)** | 2018 | [Gidaris et al.](https://arxiv.org/abs/1803.07728) | Unsupervised representation learning by predicting 2D image rotations. |
+| **[Jigsaw Puzzles](./Jigsaw.md)** | 2016 | [Noroozi & Favaro](https://arxiv.org/abs/1603.09246) | Unsupervised learning of spatial context by solving jigsaw puzzles of image patches. |
+| **[Variational Autoencoder (VAE)](./VAE.md)** | 2013 | [Kingma & Welling](https://arxiv.org/abs/1312.6114) | Generative models mapping inputs to probabilistic latent spaces with reparameterization. |
+| **[Sparse Autoencoder (SAE)](./SparseAutoencoder.md)** | 2007 | [Ranzato et al.](https://proceedings.neurips.cc/paper/2007/file/9c838d2e45b2ad1094d42f4ef36764f6-Paper.pdf) | Autoencoders with sparsity constraints to learn efficient, localized, and salient features. |
 
 ## 1. Contrastive Learning
 Contrastive Learning methods learn by pulling "positive" pairs (different augmented views of the same image) closer in the embedding space, while pushing apart "negative" pairs (different images). 
