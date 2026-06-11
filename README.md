@@ -17,6 +17,8 @@ Below are detailed explanations and architecture diagrams for Masked Autoencoder
 8.  **[Data2Vec](./Data2Vec.md)** - A unified framework for self-supervised learning across vision, speech, and text.
 9.  **[MaskFeat](./MaskFeat.md)** - Masked feature prediction using HOG as the target.
 10. **[CAE](./CAE.md)** - Context Autoencoder using a latent regressor for masked patch prediction.
+11. **[Variational Autoencoder (VAE)](./VAE.md)** - Generative models using probabilistic latent spaces and reparameterization.
+12. **[Sparse Autoencoder (SAE)](./SparseAutoencoder.md)** - Autoencoders with sparsity constraints to learn efficient and salient features.
 
 ## 1. Contrastive Learning
 Contrastive Learning methods learn by pulling "positive" pairs (different augmented views of the same image) closer in the embedding space, while pushing apart "negative" pairs (different images). 
@@ -40,8 +42,8 @@ These spatial approaches learn by understanding geometry or absolute positioning
 
 ## 5. Deep Generative Alternatives
 While not technically "masked" autoencoders, they utilize the broader Autoencoder framework for representation learning.
-* **Variational Autoencoders (VAEs):** Probabilistic models that map inputs to a latent space governed by probability distributions, allowing for both representation learning and generative decoding.
-* **Sparse Autoencoders:** Enforce a sparsity penalty on the hidden layers, forcing the model to learn highly specific, localized, and meaningful features.
+* **[Variational Autoencoders (VAEs)](./VAE.md):** Probabilistic models that map inputs to a latent space governed by probability distributions, allowing for both representation learning and generative decoding.
+* **[Sparse Autoencoders (SAEs)](./SparseAutoencoder.md):** Enforce a sparsity penalty on the hidden layers, forcing the model to learn highly specific, localized, and meaningful features.
 
 ***
 
