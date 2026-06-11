@@ -3,11 +3,15 @@
 </p>
 
 <p align="center">
-  <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome List"></a>
+  <a href="https://github.com/ishandutta2007/awesome-awesome-awesome"><img src="https://awesome.re/badge.svg" alt="Awesome List"></a>
   <a href="https://github.com/ishandutta2007/Awesome-Masked-Autoencoders/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Masked-Autoencoders?style=social" alt="GitHub Stars"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
   <a href="https://github.com/ishandutta2007/Awesome-Masked-Autoencoders/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
   <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintained">
+  <br />
+  <a href="https://github.com/ishandutta2007">
+    <img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow&style=for-the-badge&logo=github&logoColor=white" alt="Github"/>
+  </a>
 </p>
 
 # 🌟 Awesome Masked Autoencoders (MAE) & Self-Supervised Learning
