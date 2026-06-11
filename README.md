@@ -21,22 +21,22 @@ Below are detailed explanations and architecture diagrams for Masked Autoencoder
 ## 1. Contrastive Learning
 Contrastive Learning methods learn by pulling "positive" pairs (different augmented views of the same image) closer in the embedding space, while pushing apart "negative" pairs (different images). 
 * **[SimCLR](./SimCLR.md):** Uses a simple framework that avoids memory banks, relying instead on large batch sizes and data augmentation.
-* **MoCo (Momentum Contrast):** Builds dynamic dictionaries with a queue and a momentum encoder, decoupling batch size from the number of negative samples.
+* **[MoCo](./MoCo.md) (Momentum Contrast):** Builds dynamic dictionaries with a queue and a momentum encoder, decoupling batch size from the number of negative samples.
 
 ## 2. Joint-Embedding Predictive Architectures (JEPAs)
 Instead of matching pixel-by-pixel, JEPAs predict the representation of a masked patch in an abstract latent space rather than the input space itself. 
 * **[I-JEPA](./I-JEPA.md) (Image-Joint Embedding Predictive Architecture):** Predicts the semantic embedding of a hidden/masked patch from a visible context block, resulting in strong object-level understanding without pixel-level detail reconstruction.
-* **VICReg (Variance-Invariance-Covariance Regularization):** A non-contrastive method that prevents representation collapse by maximizing variance, ensuring feature invariance, and minimizing covariance between embedding dimensions.
+* **[VICReg](./VICReg.md) (Variance-Invariance-Covariance Regularization):** A non-contrastive method that prevents representation collapse by maximizing variance, ensuring feature invariance, and minimizing covariance between embedding dimensions.
 
 ## 3. Self-Distillation / Clustering Methods
 These techniques align the feature representations of different views of the same image without requiring negative samples.
 * **[DINO](./DINO.md) (Self-Distillation with No Labels):** Treats self-supervised learning as a teacher-student distillation process. The student network predicts the output of the teacher network, employing a centered and sharpened softmax to prevent collapse.
-* **SwAV (Swapping Assignments between multiple Views):** Computes cluster assignments for multiple views of an image and swaps them, forcing the model to learn view-invariant features.
+* **[SwAV](./SwAV.md) (Swapping Assignments between multiple Views):** Computes cluster assignments for multiple views of an image and swaps them, forcing the model to learn view-invariant features.
 
 ## 4. Canonical / Spatial Context Prediction
 These spatial approaches learn by understanding geometry or absolute positioning rather than reconstructing missing parts.
-* **RotNet:** Trains models by predicting the rotational orientation of an image (0°, 90°, 180°, or 270°).
-* **Jigsaw Puzzles:** Divides images into a grid, shuffles the patches, and tasks the model with rearranging them into the correct spatial order. 
+* **[RotNet](./RotNet.md):** Trains models by predicting the rotational orientation of an image (0°, 90°, 180°, or 270°).
+* **[Jigsaw Puzzles](./Jigsaw.md):** Divides images into a grid, shuffles the patches, and tasks the model with rearranging them into the correct spatial order. 
 
 ## 5. Deep Generative Alternatives
 While not technically "masked" autoencoders, they utilize the broader Autoencoder framework for representation learning.
