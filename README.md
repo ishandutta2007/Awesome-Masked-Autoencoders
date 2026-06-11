@@ -35,3 +35,17 @@ To evaluate how these alternative frameworks perform relative to masked modeling
 * **Benchmark Comparisons:** Explore how contrastive methods compare against MIM on ImageNet classification via the [CVPR Open Access Repository](https://thecvf.com).
 * **Hybrid Approaches:** Read about frameworks that attempt to distill masked autoencoders into contrastive models in research on [MOMA](https://springer.com).
 * **Theoretical Foundations:** Understand the mathematical properties of invariant feature learning via the [CVPR 2023 Paper Archive](https://thecvf.com/content/CVPR2023/papers/Kong_Understanding_Masked_Image_Modeling_via_Learning_Occlusion_Invariant_Feature_CVPR_2023_paper.pdf).
+
+
+## 📈 Star History
+
+<div align="center">
+   <a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Masked-Autoencoders&type=date&legend=bottom-right">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Masked-Autoencoders&type=date&theme=dark&legend=bottom-right" />
+      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Masked-Autoencoders&type=date&legend=bottom-right" />
+      <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Masked-Autoencoders&type=date&legend=bottom-right" />
+    </picture>
+   </a>
+</div>
+
